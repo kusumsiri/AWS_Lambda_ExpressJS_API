@@ -5,20 +5,27 @@ An example that explains and demonstrates how to create a Lambda function based 
 AWS [Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) allows code to run without dealing with servers in the cloud. Visit my [this repository](https://github.com/kusumsiri/AWS_Lambda_Serverless_Framework) for more details and clarifications. This explains how to create an Express.js API that handles all the endpoints inside Express.js.
 
 ### Prerequisites
-1. The [Serverless framework](https://www.serverless.com/framework/docs/getting-started) must be installed
-2. Then [AWS credentials](https://www.serverless.com/framework/docs/providers/aws/guide/credentials) are configured
+1. [Node.js](https://nodejs.org/en/) installed
+2. The [Serverless framework](https://www.serverless.com/framework/docs/getting-started) must be installed
+3. Then [AWS credentials](https://www.serverless.com/framework/docs/providers/aws/guide/credentials) are configured
 
 ### Setting up and deploying
 Use the following command to clone this repository.
 
 ```
 git clone https://github.com/kusumsiri/AWS_Lambda_ExpressJS_API.git
-cd AWS_Lambda_Serverless_Framework
+
+cd AWS_Lambda_ExpressJS_API
 ```
-Then use the following command to deploy it
+Then use the following command to install relevant node packages. (express & serverless-http)
+```
+npm install
+```
+After that use the following command to deploy the Express API
 ```
 serverless deploy
 ```
+
 Your output will look like below
 ```
 Deploying lambda-function to stage dev (us-east-1)
