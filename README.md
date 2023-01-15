@@ -1,4 +1,9 @@
 # AWS Lambda Express.js API by Serverless Framework
+<p>
+  <a href="https://www.serverless.com">
+    <img src="http://public.serverless.com/badges/v3.svg">
+  </a>
+</p>
 An example that explains and demonstrates how to create a Lambda function based Express API on Amazon Web Services (AWS) using the Serverless-framework
 
 ### Introduction
