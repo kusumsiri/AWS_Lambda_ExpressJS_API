@@ -1,0 +1,17 @@
+service: aws-lambda-expressjs-api
+frameworkVersion: '^3.25.1'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1 # optional, Use this to overwrite the default region. Default is us-east-1
+  stage: dev # optional, Set the default stage used. Default is dev
+
+functions:
+  api:
+    handler: handler.handler # required, handler set in AWS Lambda
+    name: ${sls:stage}-lambda-expressjs-api # optional, Deployed Lambda name
+    description: Node Express.js API. All endpoints are handled in Express.js # optional, Description to publish to AWS
+    memorySize: 128 # optional, in MB,
+    events:
+      - httpApi: '*'
